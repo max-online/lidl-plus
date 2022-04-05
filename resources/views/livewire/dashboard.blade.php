@@ -34,8 +34,8 @@
                         @else
                             Einkäufe in den letzten 2 Monaten
                         @endif
-                    </div> 
-                </div> 
+                    </div>
+                </div>
                 <div class="p-4">
                     <table>
                         <tr>
@@ -69,12 +69,12 @@
                                 <td class="p-2 text-right font-semibold">{{ money(($purchases->sum('total') - $purchases->sum('savings'))/$days/100) }} €</td>
                             </tr>
                         @endif
-                    </table>  
+                    </table>
                 </div>
             </div>
         </div>
 
-        <div class="w-1/2 border border-gray-200 rounded-md">
+        <div class="w-1/2 self-start border border-gray-200 rounded-md">
             <table class="w-full">
                 <thead>
                     <tr class="font-medium bg-gray-100 text-gray-600 border-b border-black">
@@ -89,16 +89,16 @@
                         <td class="px-3 py-2 text-blue-400 cursor-pointer hover:underline">
                             <a href="{{ url('purchase/' . $purchase->id) }}"> Vom {{ $purchase->date->germanFormat() }}</a>
                         </td>
-                        <td class="px-3 py-2 text-right">{{ money($purchase->total/100) }} €</td>    
-                        <td class="px-3 py-2 text-right">{{ money($purchase->savings/100) }} €</td>    
+                        <td class="px-3 py-2 text-right">{{ money($purchase->total/100) }} €</td>
+                        <td class="px-3 py-2 text-right">{{ money($purchase->savings/100) }} €</td>
                     </tr>
                 @endforeach
                 </tbody>
                 <tfoot>
                     <tr class="bg-gray-100 border-t-2 border-black hover:bg-gray-100">
                         <td class="px-2 py-3 font-medium text-gray-600">Summe</td>
-                        <td class="px-2 py-3 text-right">{{ money($purchases->sum('total')/100) }} €</td>    
-                        <td class="px-2 py-3 text-right">{{ money($purchases->sum('savings')/100) }} €</td>    
+                        <td class="px-2 py-3 text-right">{{ money($purchases->sum('total')/100) }} €</td>
+                        <td class="px-2 py-3 text-right">{{ money($purchases->sum('savings')/100) }} €</td>
                     </tr>
                 </tfoot>
             </table>
