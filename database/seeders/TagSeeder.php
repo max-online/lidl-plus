@@ -72,6 +72,7 @@ class TagSeeder extends Seeder
                 'hokkaido',
                 'cornichons',
                 'rosenkohl',
+                'kürbis',
             ],
             // Getränke
             3 => [
@@ -101,6 +102,9 @@ class TagSeeder extends Seeder
                 'leberw',
                 'bockwurst',
                 'teewurst',
+                'aufschnitt',
+                'paprikalyoner',
+                'fleischsalat',
             ],
             // Fisch
             5 => [
@@ -135,6 +139,7 @@ class TagSeeder extends Seeder
                 'mozzarella',
                 'feta',
                 'philadelphia kräuter',
+                'käseaufschnitt',
             ],
             // Haushalt
             8 => [
@@ -165,6 +170,7 @@ class TagSeeder extends Seeder
                 'balsamico di modena',
                 'zimt gemahlen',
                 'basilikum',
+                'nudel schinken',
             ],
             // Getreideprodukte
             10 => [
@@ -190,6 +196,8 @@ class TagSeeder extends Seeder
                 'weltmeisterbr',
                 'crustini',
                 'gnocchi',
+                'bauernkruste',
+                'toast',
             ],
             // Eier
             11 => [
@@ -223,7 +231,8 @@ class TagSeeder extends Seeder
                 'müller milch vanille',
                 'studentenfutter',
                 'schokolade',
-                'weihnachtsmann'
+                'weihnachtsmann',
+                'backpulver',
             ],
             // Fertiggerichte
             13 => [
@@ -238,7 +247,9 @@ class TagSeeder extends Seeder
                 'sweet & sour sauce',
                 'Picco Pizzi',
                 'bensor',
-                'dr. oetk rist. diav'
+                'dr. oetk rist. diav',
+                'linseneintopf',
+                'sushi',
             ],
 
             14 => [
@@ -251,6 +262,7 @@ class TagSeeder extends Seeder
             15 => [
                 'honig',
                 'hummus',
+                'lätta',
             ],
         ];
 
