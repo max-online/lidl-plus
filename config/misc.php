@@ -70,6 +70,8 @@ return [
             'Prosciutto' => 'Prosciutto',
             'Leberw' => 'Leberwurst',
             'Hackfleisch' => 'Hackfleisch',
+            'Edelsalami' => 'Edelsalami',
+            'Käse-Paprika Würst' => 'Käse-Paprika Würstchen',
             // Gemüse
             'Kaisergem. Mix 1888g' => 'Kaisergemüse',
             'Blattsalat-Rohk.-Mix' => 'Blattsalat',
@@ -87,6 +89,9 @@ return [
             'Rucola 125g' => 'Rucola',
             'TomateStrau. kg' => 'Tomaten kg',
             'Rosenkohl' => 'Rosenkohl',
+            'Kürbis' => 'Kürbis',
+            'Kopfsalat' => 'Kopfsalat',
+            'Multicol. Salat' => 'Multicolor Salat',
             // Fisch
             'Thunfisch' => 'Thunfisch',
             'Räucherlachs' => 'Räucherlachs',
@@ -107,6 +112,7 @@ return [
             'Schlagsahne' => 'Schlagsahne',
             'Speisequark' => 'Speisequark',
             'Vollmilch' => 'Milch',
+            'Frischmilch' => 'Milch',
             'Bärenm.' => 'Bärenmilch',
             'H-Sahne' => 'Schlagsahne hocherh.',
             'Kefir 1,5%' => 'Kefir',
@@ -164,14 +170,20 @@ return [
             'UncleB Kantonesisch' => 'UncleBen\'s Kantonesisch',
             'UncleBen\'s Süß Sauer' => 'UncleBen\'s Süß-Sauer',
             'BensOr.Süß-Sau. o.Zu' => 'UncleBen\'s Süß-Sauer',
+            'Dr.Oetker Pizza' => 'Dr. Oetker Pizza',
             'Dr.Oetker Tradiziona' => 'Dr. Oetker Pizza',
             'Dr.Oetker Ris.Hawaii' => 'Dr. Oetker Pizza',
-            // Radler
+            'Dr.Oetker Spinaci' => 'Dr. Oetker Pizza',
+            'Wagner Backf.Hähnche' => 'Wagner Pizza',
+            'Erasco Lins. Eintopf' => 'Linseneintopf',
+            'Sushi' => 'Sushi',
+            // Getränke
             'Naturtrübes Radler' => 'Radler 0,5l',
             'Naturradler Apfel' => 'Radler 0,5l',
             'Radler Naturtrüb' => 'Radler 0,33l',
             'Radler 6x8,51' => 'Radler 6 x 0,5l',
             'Kaffee Auslese klas.' => 'Kaffee',
+            'Jacobs Krön.' => 'Kaffee',
             'Kamillentee in Tüte' => 'Kamillentee',
             // Sonstiges
             'Eier' => 'Eier',

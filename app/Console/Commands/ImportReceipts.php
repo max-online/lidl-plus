@@ -67,13 +67,13 @@ class ImportReceipts extends Command
     protected function getFiles()
     {
         if ($this->option('test')) {
-            return \File::files('tests/data');
+            return \File::allFiles('tests/data');
         }
 
         /* $data = (new TesseractOCR($targetFile))
             ->lang('deu')
             ->run(); */
 
-        return \File::files(public_path('/data'));
+        return \File::allFiles(public_path('/data'));
     }
 }

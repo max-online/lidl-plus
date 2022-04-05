@@ -18,27 +18,27 @@ class CategoryService
 
         foreach($articles as $article) {
             $filteredTags = $tags->filter(fn($category, $tag) => preg_match('/' . $tag . '/i', $article->name));
-            
-            $matches = collect();
 
-            foreach ($filteredTags as $tag => $category) {    
-                $matches->push([
-                    'category' => $category,
-                    'similarity' => $this->calculateSimilarity($article->name, $tag),
-                ]);
-            }
-
-            $categoryId = $this->determineCategory($matches);
+            $categoryId = $this->determineCategory($article, $filteredTags);
 
             Article::where('name', $article->name)->update([
                 'category_id' => $categoryId
             ]);
-            
+
         };
     }
 
-    protected function determineCategory($matches)
+    protected function determineCategory($article, $filteredTags)
     {
+        $matches = collect();
+
+        foreach ($filteredTags as $tag => $category) {
+            $matches->push([
+                'category' => $category,
+                'similarity' => $this->calculateSimilarity($article->name, $tag),
+            ]);
+        }
+
         if ($matches->isEmpty()) {
             return self::CATEGORY_OTHERS;
         }
@@ -57,6 +57,6 @@ class CategoryService
         if (str_ends_with(\Str::lower($article), $tag))
             $score += 3;
 
-        return $score;    
+        return $score;
     }
 }
